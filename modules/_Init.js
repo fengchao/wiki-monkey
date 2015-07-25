@@ -26,5 +26,27 @@ var WM = new function () {
     this.main = function (defaultConfig) {
         WM.Cfg._load(defaultConfig);
         WM.UI._makeUI();
+
+        // ******************************************************************************
+        var ss = document.scripts;
+        var re = new RegExp("^\\s*if\\s*\\(\\s*window\\.mw\\s*\\)\\s*\\{" +
+                       "\\s*mw\\.config\\.set\\(\\s*(.+)\\s*\\)\\s*;?\\s*" +
+                       "\\}\\s*$", "m");
+
+        for (var s = 0; s < ss.length; s++) {
+            var script = document.scripts[s];
+            var match = re.exec(script.innerHTML);
+
+            if (match) {
+                var mwInfo = JSON.parse(match[1]);
+
+                for (var key in mwInfo) {
+                    WM.Log.logDebug(key + ": " + mwInfo[key]);
+                }
+
+                break;
+            }
+        }
+        // ******************************************************************************
     };
 };
