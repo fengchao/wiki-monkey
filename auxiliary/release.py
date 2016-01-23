@@ -760,6 +760,7 @@ PLUGINS = {
         "ArchWikiUpdatePackageTemplates",
         "ArchWikiWantedCategories",
         "DeletePages",
+        "AntiSpam",
     ),
     "ArchWiki": (
         "ArchWikiFixHeader",

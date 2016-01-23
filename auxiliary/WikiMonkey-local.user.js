@@ -66,6 +66,7 @@
 // @require file:///home/dario/data/backup_heavy/development/wiki-monkey/plugins/ArchWikiUpdatePackageTemplates.js
 // @require file:///home/dario/data/backup_heavy/development/wiki-monkey/plugins/ArchWikiWantedCategories.js
 // @require file:///home/dario/data/backup_heavy/development/wiki-monkey/plugins/DeletePages.js
+// @require file:///home/dario/data/backup_heavy/development/wiki-monkey/plugins/AntiSpam.js
 // ==/UserScript==
 
 WM.main({

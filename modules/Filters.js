@@ -94,6 +94,10 @@ WM.Filters = new function () {
 
             return $('<div/>')
                 .attr('id', 'WikiMonkeyFilters')
+
+                // TODO: Install antispam as a normal plugin
+                .append(WM.Plugins.AntiSpam.makeUI())
+
                 .append(selectFilterDiv)
                 .append(applyFilterDiv)
                 .append(divFilter)
