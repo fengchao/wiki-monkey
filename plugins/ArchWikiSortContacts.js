@@ -101,7 +101,7 @@ WM.Plugins.ArchWikiSortContacts = new function () {
 
                 WM.Log.logInfo("Querying " + ucuser + " ...");
 
-                WM.MW.getUserContribs(ucuser, ucstart, ucend,
+                WM.MW.getUserContribs(ucuser, "", ucstart, ucend, null,
                     WM.Plugins.ArchWikiSortContacts.storeUserContribs,
                     [usersArray, index, ucstart, ucend, users, title, source,
                      startList, endList, timestamp, edittoken, inactiveLimit,

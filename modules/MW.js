@@ -558,14 +558,24 @@ WM.MW = new function () {
         callArgs, null);
     };
 
-    this.getUserContribs = function (ucuser, ucstart, ucend, call, callArgs) {
+    this.getUserContribs = function (ucuser, ucprop, ucstart, ucend, ucshow,
+                                                            call, callArgs) {
         var query = {action: "query",
                     list: "usercontribs",
                     ucuser: ucuser,
-                    ucprop: "",
-                    ucstart: ucstart,
-                    ucend: ucend,
                     uclimit: 500}
+        if (ucprop !== null) {
+            query.ucprop = ucprop;
+        }
+        if (ucstart) {
+            query.ucstart = ucstart;
+        }
+        if (ucend) {
+            query.ucend = ucend;
+        }
+        if (ucshow) {
+            query.ucshow = ucshow;
+        }
 
         this._getUserContribsContinue(query, call, callArgs, []);
     };
