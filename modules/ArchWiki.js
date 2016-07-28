@@ -100,6 +100,7 @@ WM.ArchWiki = new function () {
         }
     };
 
+    // TODO: No longer needed, ArchWiki ToCs are updated by wiki-scripts now
     var tablesOfContents = {
         "ar": {
             "page": "Table of contents (العربية)",

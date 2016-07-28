@@ -18,6 +18,8 @@
  *  along with Wiki Monkey.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// TODO: This plugin should be renamed to "ArchWikiCodeTemplates"
+
 WM.Plugins.ArchWikiNewTemplates = new function () {
     "use strict";
 

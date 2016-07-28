@@ -18,6 +18,8 @@
  *  along with Wiki Monkey.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// TODO: Simplify, since the main ArchWiki ToCs are updated by wiki-scripts now
+
 WM.Plugins.UpdateCategoryTree = new function () {
     "use strict";
 

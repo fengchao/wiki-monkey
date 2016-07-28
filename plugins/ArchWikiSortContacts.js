@@ -18,6 +18,8 @@
  *  along with Wiki Monkey.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// TODO: Counting associated bots should be optional (currently disabled)
+
 WM.Plugins.ArchWikiSortContacts = new function () {
     "use strict";
 
